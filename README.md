@@ -1,7 +1,6 @@
 # Toward Multi-Agent Reinforcement Learning for Distributed Event-Triggered Control
 
-This repository contains the official implementation of [Toward Multi-Agent Reinforcement Learning for Distributed Event-Triggered Control](https://sites.google.com/view/learning-distributed-etc/start). 
-The code base is a modified version of the code in [Learning Event-triggered Control from Data through Joint Optimization](https://arxiv.org/pdf/2008.04712.pdf) by N. Funk, D. Baumann, V. Berenz and S. Trimpe. 
+This repository contains the official implementation of the project [Toward Multi-Agent Reinforcement Learning for Distributed Event-Triggered Control](https://sites.google.com/view/learning-distributed-etc/start) by Lukas Kesper, Sebastian Trimpe, and Dominik Baumann. 
 
 ## Installation 
 
@@ -80,3 +79,13 @@ For loading a model:
    Seed, app and num have to be identical to the version you want to load
 
 Every run of a model creates files in *train_results*. There we include the scripts that were used to run the environment in the first place, as well as the evaluations for each agent, and averaged quantities for the group of agents.
+
+## Credits
+
+This repository is based on prior work.
+
+It extends the algorithm by N. Funk, D. Baumann, V. Berenz, and Sebastian Trimpe, "[Learning event-triggered control from data through joint optimization](https://arxiv.org/pdf/2008.04712.pdf)," IFAC Journal of Systems and Control, 2021 to multi-agent systems and as such uses their [codebase](https://github.com/nifunk/learning_event_triggered_control).
+
+It also contains parts of the [OpenAI baselines repository](https://github.com/openai/baselines) inside the folder **baselines**. Inside this folder you can also find the corresponding license.
+
+The implementation of our proposed hierarchical reinforcement learning algorithm is based on prior work by Martin Klissarov et. al and their [PPOC repository](https://github.com/mklissa/PPOC).
